@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        class Empolyee {
+            constructor() {
+                this.name = 'hari'
+
+            }
+        }
+
+        class SuperEmpolyee extends Empolyee {
+                constructor() {
+                    super();
+
+                }
+            
+            fun() {
+
+                console.log(this.name); // prints prototype property value
+                this.name = "sai"; 
+                console.log(this.name); // prints overridden value
+
+            }
+
+        }
+
+        var s = new SuperEmpolyee;
+        s.fun();
+        console.log(s);
+    </script>
+</head>
+
+<body>
+    Class Demo
+
+</body>
+
+</html>
